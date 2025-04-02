@@ -1,0 +1,44 @@
+---
+import Wrapper from "@/layouts/Wrapper.astro";
+---
+
+<div class="bg-white w-full">
+  <Wrapper className="my-14 space-y-10">
+    <div class="flex flex-col items-center gap-[30px]">
+      <h1 class="text-6xl text-secn-blue font-bold">
+        Cotiza aquí el seguro ideal para ti
+      </h1>
+      <p class="text-text3 text-xl font-medium">
+        Ofrecemos una amplia gama de seguros, diseñados para proteger lo que más
+        valoras.
+      </p>
+    </div>
+
+    <div
+      class="grid grid-cols-3 grid-rows-[repeat(auto-fill,408px)] gap-[30px]"
+    >
+      <div
+        class="group col-span-2 bg-gray1 hover:bg-princ-blue transition-all rounded-[30px] flex gap-5 overflow-hidden cursor-pointer"
+      >
+        <div class="p-24 flex flex-col items-center gap-[60px]">
+          <h2
+            class="group-hover:text-secn-blue text-3xl font-bold text-text2 transition-all"
+          >
+            Póliza de Autos y Motos
+          </h2>
+          <button
+            class="h-10 w-[200px] bg-tirth text-white rounded-[10px] cursor-pointer"
+            >Cotizar</button
+          >
+        </div>
+        <div class="overflow-hidden shrink-0">
+          <img
+            class="w-full object-cover group-hover:scale-110 transition-all"
+            src="/img/auto_1@3x.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </Wrapper>
+</div>

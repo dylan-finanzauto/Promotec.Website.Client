@@ -1,0 +1,47 @@
+---
+import P from "@/assets/P.svg";
+import ChevronLeftIcon from "../icons/ChevronLeftIcon.astro";
+import ChevronRightIcon from "../icons/ChevronRightIcon.astro";
+import Wrapper from "@/layouts/Wrapper.astro";
+---
+
+<section class="relative w-full h-[700px] overflow-hidden">
+  <div class="">
+    <img src="img/adult-couple-sitting-grass-with-white-dog.png" alt="" />
+
+    <img class="absolute top-0" src={P.src} alt="" />
+
+    <div class="absolute inset-0 w-full h-full flex items-center">
+      <Wrapper>
+        <div class="max-w-md space-y-10">
+          <h1 class="text-6xl font-extrabold text-white leading-[1.15]">
+            <span class="text-princ-blue">Tranquilidad</span> para ti, <span
+              class="text-princ-blue">cuidado</span
+            > para ellos.
+          </h1>
+          <p class="text-[26px] font-medium text-white leading-tight">
+            Protege a tu mejor amigo con nuestro <span class="text-princ-blue"
+              >seguro de mascotas.</span
+            >
+          </p>
+        </div>
+      </Wrapper>
+    </div>
+  </div>
+
+  <div
+    class="absolute left-0 top-1/2 -translate-y-1/2 w-full flex justify-between px-8"
+  >
+    <button
+      class="size-10 bg-white rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:shadow-xl transition-all duration-300 ease-in-out"
+    >
+      <ChevronLeftIcon class="size-5 text-secn-blue" />
+    </button>
+
+    <button
+      class="size-10 bg-white rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:shadow-xl transition-all duration-300 ease-in-out"
+    >
+      <ChevronRightIcon class="size-5 text-secn-blue" />
+    </button>
+  </div>
+</section>

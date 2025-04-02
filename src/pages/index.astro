@@ -1,0 +1,24 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Navigation from "@/components/Navigation.astro";
+import HeroSection from "@/components/_sections/HeroSection.astro";
+import Attention from "@/components/Attention.astro";
+import Cookies from "@/components/Cookies.astro";
+import Quotes from "@/components/_sections/Quotes.astro";
+---
+
+<Layout title="Promotec | Personas">
+  <div class="sticky inset-0 z-40">
+    <Header />
+    <Navigation />
+  </div>
+  <main>
+    <HeroSection />
+    <Quotes />
+  </main>
+
+  <Attention />
+
+  <!-- <Cookies /> -->
+</Layout>

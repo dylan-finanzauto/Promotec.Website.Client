@@ -1,0 +1,32 @@
+---
+import Wrapper from "@/layouts/Wrapper.astro";
+import CircleAlert from "./icons/CircleAlert.astro";
+---
+
+<div class="fixed left-0 bottom-0 w-full mb-2">
+  <Wrapper>
+    <div
+      class="flex items-center gap-5 p-5 rounded-2xl bg-princ-blue shadow-2xl"
+    >
+      <CircleAlert class="size-8 shrink-0 text-secn-blue" />
+      <p class="text-sm text-secn-blue">
+        Utilizamos cookies para mejorar tu experiencia en nuestro sitio,
+        personalizar contenido y publicidad. Así mismo analizar nuestro tráfico.
+        Algunas cookies son esenciales para el funcionamiento del sitio,
+        mientras que otras nos ayudan a optimizar tu experiencia. Puedes aceptar
+        todas las cookies o personalizar tus preferencias. Para más información,
+        consulta nuestra Política de Cookies.
+      </p>
+      <div class="flex gap-3">
+        <button
+          class="h-10 w-[96px] text-secn-blue border border-secn-blue rounded-[10px] bg-transparent cursor-pointer"
+          >Rechazar</button
+        >
+        <button
+          class="h-10 w-[96px] bg-tirth text-white rounded-[10px] cursor-pointer"
+          >Aceptar</button
+        >
+      </div>
+    </div>
+  </Wrapper>
+</div>

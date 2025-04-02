@@ -1,0 +1,62 @@
+---
+import Wrapper from "@/layouts/Wrapper.astro";
+import Link from "./Link.astro";
+import clsx from "clsx";
+import Logo from "@/assets/logo.svg";
+
+const path = Astro.url.pathname;
+
+const routes = [
+  {
+    text: "Productos",
+    url: "/productos",
+  },
+  {
+    text: "Emergencia",
+    url: "/emergencia",
+  },
+  {
+    text: "Nosotros",
+    url: "/nosotros",
+  },
+  {
+    text: "Contáctanos",
+    url: "/contactanos",
+  },
+];
+---
+
+<div class="h-20 bg-gray1">
+  <Wrapper className="flex gap-10 py-[18px] h-full">
+    <img class="w-[156px] h-[44px]" src={Logo.src} alt="" />
+    <div class="flex-grow flex items-center gap-8">
+      {
+        routes.map((r) => {
+          const isActive = path == r.url;
+
+          return (
+            <Link
+              href={r.url}
+              className={clsx(
+                "text-secn-blue",
+                isActive ? "font-medium" : "text-secn-blue",
+              )}
+            >
+              {r.text}
+            </Link>
+          );
+        })
+      }
+    </div>
+    <div class="flex gap-[10px]">
+      <button
+        class="h-10 w-[162px] text-secn-blue border border-secn-blue rounded-[10px] bg-transparent cursor-pointer"
+        >Soy cliente</button
+      >
+      <button
+        class="h-10 w-[162px] bg-tirth text-white rounded-[10px] cursor-pointer"
+        >Pagos en línea</button
+      >
+    </div>
+  </Wrapper>
+</div>

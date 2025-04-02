@@ -1,0 +1,53 @@
+---
+import Wrapper from "@/layouts/Wrapper.astro";
+import Link from "./Link.astro";
+import clsx from "clsx";
+
+const path = Astro.url.pathname;
+
+const routes = [
+  {
+    text: "Personas",
+    url: "/",
+  },
+  {
+    text: "Empresas",
+    url: "/empresas",
+  },
+];
+---
+
+<header class="h-10 bg-secn-blue">
+  <Wrapper className="flex justify-between h-full">
+    <div class="flex items-end">
+      {
+        routes.map((r) => {
+          const isActive = path == r.url;
+
+          return (
+            <Link
+              href={r.url}
+              className={clsx(
+                "relative h-9 rounded-t-[10px] py-2 px-3 text-[15px]",
+                isActive ? "bg-gray1 text-secn-blue font-medium" : "text-white",
+              )}
+            >
+              {r.text}
+              <span class="absolute bottom-0 left-1/2 -translate-1/2 h-0.5 w-1/3 bg-secn-blue" />
+            </Link>
+          );
+        })
+      }
+    </div>
+    <div class="relative flex items-center">
+      <div class="hover:[&~ul]:flex text-white text-[15px] cursor-pointer">
+        Portales
+      </div>
+      <ul
+        class="hidden hover:flex absolute right-0 top-8 z-10 flex-col rounded-b-3xl bg-secn-blue px-8 py-2 text-white shadow-lg"
+      >
+        <li class="text-sm cursor-pointer">SIGLO</li>
+      </ul>
+    </div>
+  </Wrapper>
+</header>

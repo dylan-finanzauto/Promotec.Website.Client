@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-princ-blue: #D5E4F6;
+  --color-secn-blue: #345BB0;
+  --color-tirth: #FF9302;
+  --color-text: #041C3C;
+  --color-text2: #6C8EBA;
+  --color-text3: #A1A2A1;
+  --color-white2: #F4F4F4;
+  --color-gray1: #F0F2F9;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+
+  /* Barra de desplazamiento (track) */
+  ::-webkit-scrollbar {
+    width: 8px;
+    /* Ancho para la barra de desplazamiento vertical */
+    height: 8px;
+    /* Alto para la barra de desplazamiento horizontal */
+  }
+
+  /* FONDO de la barra de desplazamiento (track) */
+  ::-webkit-scrollbar-track {
+    background: #DEE5ED;
+    /* Color del fondo de la barra de desplazamiento */
+    border-radius: 4px;
+    /* Bordes redondeados */
+  }
+
+  /* ESTILO del "thumb" o control deslizante */
+  ::-webkit-scrollbar-thumb {
+    background: #A0AEC0;
+    /* Color del thumb */
+    border-radius: 4px;
+    /* Bordes redondeados del thumb */
+  }
+
+  /* ESTILO del "thumb" cuando está siendo interactuado (hover) */
+  ::-webkit-scrollbar-thumb:hover {
+    /* Color más oscuro cuando se pasa el ratón */
+    background: #7C93B5;
+  }
+
+  /* Estilo para la esquina donde se encuentran ambas barras */
+  ::-webkit-scrollbar-corner {
+    background: #DEE5ED;
+  }
+
+  input[type="password"]::-ms-reveal,
+  input[type="password"]::-ms-clear {
+    display: none;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    /* Para Firefox */
+    appearance: textfield;
+    /* Para otros navegadores */
+  }
+
+}
