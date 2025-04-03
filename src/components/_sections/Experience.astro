@@ -1,0 +1,52 @@
+---
+import PExperience from "@/assets/p-experience.svg";
+import Wrapper from "@/layouts/Wrapper.astro";
+import UserGroupIcon from "../icons/UserGroupIcon.astro";
+import LikeIcon from "../icons/LikeIcon.astro";
+---
+
+<section class="bg-princ-blue">
+    <Wrapper className="flex items-center">
+        <img src={PExperience.src} alt="" />
+        <div class="space-y-16">
+            <h2 class="text-[50px] text-text font-bold leading-none">
+                + de 40 años protegiendo lo que más valoras.
+            </h2>
+            <p class="text-text2">
+                Somos la elección confiable de miles de familias, personas y
+                negocios, asegurando su bienestar con un servicio cercano y
+                efectivo.
+            </p>
+            <div class="space-y-10">
+                <div class="flex justify-between gap-14">
+                    <div class="flex items-center gap-[30px]">
+                        <UserGroupIcon class="text-secn-blue size-[50px]" />
+                        <div class="">
+                            <h5 class="text-text2 text-lg font-bold">
+                                Clientes
+                            </h5>
+                            <h3 class="text-[50px] text-secn-blue font-bold">
+                                + 260.000
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[30px]">
+                        <LikeIcon class="text-secn-blue size-[50px]" />
+                        <div class="">
+                            <h5 class="text-text2 text-lg font-bold">
+                                Nuestra renovación
+                            </h5>
+                            <h3 class="text-[50px] text-secn-blue font-bold">
+                                85%
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="px-12 py-3 bg-tirth text-white rounded-[10px] text-lg font-medium cursor-pointer"
+                    >Cotizar</button
+                >
+            </div>
+        </div>
+    </Wrapper>
+</section>

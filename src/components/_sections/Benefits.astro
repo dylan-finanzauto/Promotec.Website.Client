@@ -1,0 +1,90 @@
+---
+import Wrapper from "@/layouts/Wrapper.astro";
+import PromotecSure from "@/assets/images/promotec-sure.png";
+import Multichannel from "@/assets/images/multichannel.png";
+import PersonalizedAttention from "@/assets/images/personalized-attention.png";
+import DigitalRenewal from "@/assets/images/digital-renewal.png";
+---
+
+<section class="bg-gray1 py-[100px]">
+    <Wrapper className="flex flex-col items-center gap-[30px] px-[100px]">
+        <h2 class="text-[40px] text-secn-blue text-center font-bold">
+            Conoce los beneficios de tener una póliza con Promotec
+        </h2>
+        <p class="text-center text-text4 text-[20px]">
+            Encuentra en Promotec una amplia gama de seguros para todas las
+            necesidades y presupuestos.
+        </p>
+        <div class="grid grid-cols-2 grid-rows-2 gap-[16px_20px]">
+            <div
+                class="h-[211px] bg-white p-[30px] rounded-[20px] flex items-center gap-[30px]"
+            >
+                <div class="py-[30px]">
+                    <img class="" src={PromotecSure.src} alt="" />
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-3xl text-text2 font-bold max-w-[285px]">
+                        Seguro con Promotec
+                    </h4>
+                    <p class="text-text">
+                        Nuestro equipo de asesores especializados está a tu
+                        disposición para ayudarte a encontrar tu póliza de
+                        seguro Ideal.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="h-[211px] bg-white p-[30px] rounded-[20px] flex items-center gap-[30px]"
+            >
+                <div class="py-[30px]">
+                    <img class="" src={Multichannel.src} alt="" />
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-3xl text-text2 font-bold max-w-[285px]">
+                        Proceso 100% multicanal
+                    </h4>
+                    <p class="text-text">
+                        ¡Simplificamos nuestro proceso! Todos nuestros canales
+                        se encuentran integrados y disponibles para que
+                        adquieras tu póliza de seguro.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="h-[211px] bg-white p-[30px] rounded-[20px] flex items-center gap-[30px]"
+            >
+                <div class="py-[30px]">
+                    <img class="" src={PersonalizedAttention.src} alt="" />
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-3xl text-text2 font-bold max-w-[285px]">
+                        Atención personalizada
+                    </h4>
+                    <p class="text-text">
+                        Nuestro equipo de asesores especializados te brindará el
+                        acompañamiento que mereces.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="h-[211px] bg-white p-[30px] rounded-[20px] flex items-center gap-[30px]"
+            >
+                <div class="py-[30px]">
+                    <img class="" src={DigitalRenewal.src} alt="" />
+                </div>
+                <div class="space-y-3">
+                    <h4 class="text-3xl text-text2 font-bold max-w-[280px]">
+                        Renovación digital
+                    </h4>
+                    <p class="text-text">
+                        Facilitamos la renovación de tus pólizas de seguro;
+                        renuévala sin salir de casa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </Wrapper>
+</section>

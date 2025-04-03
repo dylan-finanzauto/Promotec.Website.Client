@@ -6,6 +6,13 @@ import HeroSection from "@/components/_sections/HeroSection.astro";
 import Attention from "@/components/Attention.astro";
 import Cookies from "@/components/Cookies.astro";
 import Quotes from "@/components/_sections/Quotes.astro";
+import Benefits from "@/components/_sections/Benefits.astro";
+import Experience from "@/components/_sections/Experience.astro";
+import Clients from "@/components/_sections/Clients.astro";
+import Insurance from "@/components/_sections/Insurance.astro";
+import Consulting from "@/components/_sections/Consulting.astro";
+import Certified from "@/components/_sections/Certified.astro";
+import Footer from "@/components/Footer.astro";
 ---
 
 <Layout title="Promotec | Personas">
@@ -13,10 +20,19 @@ import Quotes from "@/components/_sections/Quotes.astro";
     <Header />
     <Navigation />
   </div>
+
   <main>
     <HeroSection />
     <Quotes />
+    <Benefits />
+    <Experience />
+    <Clients />
+    <Insurance />
+    <Consulting />
+    <Certified />
   </main>
+
+  <Footer />
 
   <Attention />
 

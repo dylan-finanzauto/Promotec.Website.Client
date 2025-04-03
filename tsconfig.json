@@ -17,8 +17,10 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ],
+      ]
     },
-    "sourceMap": true
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

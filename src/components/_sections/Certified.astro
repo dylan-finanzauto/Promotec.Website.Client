@@ -1,0 +1,25 @@
+---
+import Wrapper from "@/layouts/Wrapper.astro";
+import ISO9001 from "@/assets/iso9001.svg";
+---
+
+<section class="bg-gray1 py-[100px]">
+    <Wrapper>
+        <h3 class="text-[40px] text-secn-blue font-bold text-center">
+            Estamos certificados
+        </h3>
+        <div class="mt-[30px] mb-10">
+            <p class="text-xl text-text4 text-center">
+                Contamos con la certificación <b>Bureau Veritas ISO 9001:2015</b
+                >
+            </p>
+            <p class="text-xl text-text4 text-center">
+                Venta, Fabricación, Gestión de Cartera y Servicio al Cliente
+                para Pólizas de Seguros Personales y Automotores.
+            </p>
+        </div>
+        <div class="flex justify-center">
+            <img src={ISO9001.src} alt="" />
+        </div>
+    </Wrapper>
+</section>

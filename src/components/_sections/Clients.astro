@@ -1,0 +1,39 @@
+---
+import Wrapper from "@/layouts/Wrapper.astro";
+import ArrowLeftIcon from "../icons/ArrowLeftIcon.astro";
+import ArrowRightIcon from "../icons/ArrowRightIcon.astro";
+---
+
+<section class="bg-gray1 py-[100px]">
+    <Wrapper className="space-y-10">
+        <div class="text-center space-y-4 text-secn-blue">
+            <h3 class="text-4xl font-bold">Lo que nuestros clientes dicen:</h3>
+            <p class="text-xl">
+                La satisfacción de nuestros clientes es nuestra mayor
+                recompensa. Descubre cómo nuestras soluciones financieras han
+                transformado la vida de quienes confiaron en nosotros.
+            </p>
+        </div>
+        <div class="space-y-8 flex flex-col items-center">
+            <h6 class="text-text4 text-2xl text-center font-semibold">
+                "Encontré el mejor producto que se ajustó a mis necesidades y
+                expectativas, excelente servicio en proceso de venta y
+                reclamaciones."
+            </h6>
+            <div class="flex items-center gap-[14px]">
+                <img class="size-6" src="/img/avatar.png" alt="" />
+                <div class="flex items-center gap-3">
+                    <span class="text-text font-semibold">Camilo Rivera</span>
+                    <span class="text-text font-semibold">/</span>
+                    <span class="text-[14px] text-gray5"
+                        >Cliente Seguros Hogar</span
+                    >
+                </div>
+            </div>
+            <div class="flex gap-6">
+                <ArrowLeftIcon class="text-text2 size-5" />
+                <ArrowRightIcon class="text-text2 size-5" />
+            </div>
+        </div>
+    </Wrapper>
+</section>

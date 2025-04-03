@@ -8,6 +8,6 @@ type Props = {
 const { className } = Astro.props;
 ---
 
-<div class={clsx("max-w-[1440px] w-[1440px] min-w-0 mx-auto", className)}>
+<div class={clsx("max-w-[1440px] w-full min-w-0 mx-auto", className)}>
   <slot />
 </div>

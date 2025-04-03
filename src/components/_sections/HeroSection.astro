@@ -5,19 +5,18 @@ import ChevronRightIcon from "../icons/ChevronRightIcon.astro";
 import Wrapper from "@/layouts/Wrapper.astro";
 ---
 
-<section class="relative w-full h-[700px] overflow-hidden">
+<section class="relative w-full h-fit overflow-hidden">
   <div class="">
-    <img src="img/adult-couple-sitting-grass-with-white-dog.png" alt="" />
+    <img class="object-cover" src="/img/carro.png" alt="" />
 
-    <img class="absolute top-0" src={P.src} alt="" />
+    <img class="absolute top-0 h-full" src={P.src} alt="" />
 
     <div class="absolute inset-0 w-full h-full flex items-center">
       <Wrapper>
         <div class="max-w-md space-y-10">
-          <h1 class="text-6xl font-extrabold text-white leading-[1.15]">
-            <span class="text-princ-blue">Tranquilidad</span> para ti, <span
-              class="text-princ-blue">cuidado</span
-            > para ellos.
+          <h1 class="text-6xl text-white leading-[1.15]">
+            Poliza de
+            <span class="text-princ-blue font-extrabold">Vehículos</span>
           </h1>
           <p class="text-[26px] font-medium text-white leading-tight">
             Protege a tu mejor amigo con nuestro <span class="text-princ-blue"
